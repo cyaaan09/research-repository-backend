@@ -10,12 +10,12 @@ class UserRole extends Model
 {
     use HasFactory;
 
-    public function categories(): BelongsTo
+    public function category(): BelongsTo
     {
-        return $this->belongsTo(Category::class, 'category_id');
+        return $this->belongsTo(Category::class);
     }
 
-    public function users(): BelongsTo
+    public function user(): BelongsTo
     {
         return $this->belongsTo(User::class, 'user_id');
     }

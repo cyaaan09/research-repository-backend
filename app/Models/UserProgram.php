@@ -10,12 +10,12 @@ class UserProgram extends Model
 {
     use HasFactory;
 
-    public function users(): BelongsTo
+    public function user(): BelongsTo
     {
         return $this->belongsTo(User::class);
     }
 
-    public function programs(): BelongsTo
+    public function program(): BelongsTo
     {
         return $this->belongsTo(Program::class);
     }

@@ -12,17 +12,17 @@ class Research extends Model
 {
     use HasFactory;
     
-    public function levels(): BelongsTo
+    public function level(): BelongsTo
     {
         return $this->belongsTo(Level::class);
     }
 
-    public function programs(): BelongsTo
+    public function program(): BelongsTo
     {
         return $this->belongsTo(Program::class);
     }
 
-    public function researchTypes(): BelongsTo
+    public function researchType(): BelongsTo
     {
         return $this->belongsTo(ResearchType::class);
     }

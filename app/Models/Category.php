@@ -11,7 +11,7 @@ class Category extends Model
 {
     use HasFactory;
 
-    public function types(): BelongsTo
+    public function type(): BelongsTo
     {
         return $this->belongsTo(Type::class);
     }
