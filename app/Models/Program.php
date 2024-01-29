@@ -11,7 +11,7 @@ class Program extends Model
 {
     use HasFactory;
 
-    public function levels(): BelongsTo
+    public function level(): BelongsTo
     {
         return $this->belongsTo(Level::class);
     }
